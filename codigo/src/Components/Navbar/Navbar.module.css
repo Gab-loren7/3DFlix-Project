@@ -17,6 +17,7 @@ header {
     background-color: #1f1f1f;
     border-bottom: 5px solid #A10E15;
 }
+
 /* Fim Config navbar */
 
 /* Config Box Profile */
@@ -50,51 +51,142 @@ i {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 /* Fim Config Box Profile */
 
 /* Box Menu */
 .box_menu {
     /* border: 2px solid blue; */
     display: flex;
+    margin-left: 50px;
 
     gap: 50px;
     font-family: "Overlock", sans-serif;
     font-size: 20px;
     font-weight: 700;
-}.box_menu a {
+}
+
+.box_menu a {
     /* border: 2px solid #A10E15; */
     color: #f1f1f1;
-    padding: 10px;
-}.box_menu a::after {
+    padding: 5px;
+
+}
+
+.box_menu a::after {
     content: '';
     display: block;
     height: 3px;
     background-color: #f1f1f1;
     transition: width 0.3s;
     width: 0;
-}.box_menu a:hover::after {
+}
+
+.box_menu a:hover::after {
     width: 110%;
 }
+
 /* Fim Box Menu */
 
 /* Box Pesquisa */
+.box_PesquisaLogo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
 .box_Pesquisa {
-    width: 20%;
-    height: 40px;
-    background-color: #f1f1f1;
+    /* border: 3px solid yellow; */
+    margin: auto;
+    position: relative;
     overflow: hidden;
+    width: 40px; /* 40px */
+    height: 40px;
+    left: -40px;
+    
+    background-color: #f1f1f1;
     display: flex;
     justify-content: space-between;
+    transition: .5s;
 }
 
-.input_buscar {
-    width: 90%;
-    border: none;
-    padding-left: 10px;
-    font-size: 16px;
+.box_Pesquisa.ativar {
+    width: 240px;
 }
 
-.box_Pesquisa i {
+/* Area ao redor do icone lupa */
+.box_Pesquisa .lupa_buscar {
+    /* border: 2px solid #A10E15; */
+    cursor: pointer;
+    width: 40px;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: auto;
+}
+
+/* Icone Lupa */
+.box_Pesquisa .lupa_buscar i {
+    margin: auto;
     color: #1f1f1f;
+    font-size: 24px;
 }
-/* FimBox Pesquisa */
+
+/* Box Input */
+.box_Pesquisa .input_buscar {
+    position: absolute;
+    left: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.box_Pesquisa .input_buscar input {
+    background-color: #f1f1f1;
+    border: 0;
+    outline: 0;
+    font-size: 12px;
+    /* border: 5px solid #A10E15; */
+}
+
+.box_Pesquisa .btn_fechar {
+    cursor: pointer;
+    margin: auto;
+    position: relative;
+    width: 20%;
+    height: 100%;
+    left: 100px;
+
+    /* border: 2px solid #A10E15; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_fechar i {
+    margin: auto;
+    color: #6c6c6c;
+    font-size: 20px;
+}
+
+/* Fim Box Pesquisa */
+
+/* Box logo */
+.Logo {
+    /* border: 4px solid blueviolet; */
+    width: 60px;
+    height: 50px;
+
+    background-image: url(../IMG/Logo_3D_png.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+/* Fim Box logo */
