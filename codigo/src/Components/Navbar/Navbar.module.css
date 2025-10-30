@@ -1,6 +1,6 @@
 /* Config navbar */
 header {
-    z-index: 1000;
+    z-index: 900;
     position: fixed;
 }
 
@@ -32,11 +32,13 @@ header {
 }
 
 /* Seta */
-i {
+.box_profile i {
     font-size: 24px;
     color: #f1f1f1;
     margin-left: 10px;
-    transform: rotate(0deg);
+
+    transition: transform 0.25s ease;
+    transform-origin: center;
 }
 
 /* Foto Perfil */
@@ -50,6 +52,12 @@ i {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.rotated {
+    transform: rotate(180deg);
+    transition: transform 0.25s ease;
+    /* opcional: ajusta o ponto de origem se necessário */
 }
 
 /* Fim Config Box Profile */
@@ -101,11 +109,14 @@ i {
     margin: auto;
     position: relative;
     overflow: hidden;
-    width: 40px; /* 40px */
+    width: 40px;
+    /* 40px */
     height: 40px;
     left: -40px;
-    
-    background-color: #f1f1f1;
+
+    background-color: transparent;
+    border: 2px transparent;
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     transition: .5s;
@@ -113,6 +124,8 @@ i {
 
 .box_Pesquisa.ativar {
     width: 240px;
+    background-color: #f1f1f1;
+    color: #1f1f1f;
 }
 
 /* Area ao redor do icone lupa */
@@ -121,7 +134,7 @@ i {
     cursor: pointer;
     width: 40px;
     height: 100%;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,8 +145,12 @@ i {
 /* Icone Lupa */
 .box_Pesquisa .lupa_buscar i {
     margin: auto;
-    color: #1f1f1f;
+    color: #f1f1f1;
     font-size: 24px;
+}
+
+.box_Pesquisa.ativar i {
+    color: #1f1f1f;
 }
 
 /* Box Input */
@@ -179,14 +196,13 @@ i {
 /* Box logo */
 .Logo {
     /* border: 4px solid blueviolet; */
-    width: 60px;
-    height: 50px;
+    width: 50px;
+    height: 65px;
 
-    background-image: url(../IMG/Logo_3D_png.png);
-    background-size: cover;
+    background-image: url(../IMG/Logo3D/Logo-3D-com-borda.png);
     background-position: center;
     background-repeat: no-repeat;
-
+    background-size: cover;
 }
 
 /* Fim Box logo */

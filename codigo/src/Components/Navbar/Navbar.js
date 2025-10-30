@@ -1,15 +1,28 @@
 import React, { useState } from 'react';
 import Styles from './Navbar.module.css';
 
-function Navbar() {
+function Navbar({ onFeedbackClick }) {
+
+  // Estado que controla se a busca está ativa (mostra/oculta a caixa de busca)
   const [isSearchActive, setIsSearchActive] = useState(false);
 
+  // Função que abre a busca (muda o estado para true)
   const handleSearchClick = () => {
     setIsSearchActive(true);
   };
 
+  // Função que fecha a busca (muda o estado para false)
   const handleCloseClick = () => {
     setIsSearchActive(false);
+  };
+
+  // Estado que controla a rotação do ícone de perfil
+  const [isProfileRotated, setIsProfileRotated] = useState(false);
+
+  // Função que alterna (toggle) o estado de rotação do perfil
+  // chamada quando o usuário toca/clica na caixa do perfil
+  const handleProfileClick = () => {
+    setIsProfileRotated(prev => !prev);
   };
 
   return (
@@ -17,50 +30,62 @@ function Navbar() {
       <header>
         <div className={Styles.navbar}>
 
-          <div className={Styles.box_profile}>
+          {/* Box Profile */}
+          <div className={Styles.box_profile} onClick={handleProfileClick}>
+
+            {/* IMGprofile: espaço reservado para a imagem do usuário */}
             <div className={Styles.IMGprofile}></div>
-            <i className="bi bi-arrow-down arrowProfile" id="arrowProfile"></i>
-          </div>
 
+            {/* Ícone da seta do perfil - rotação controlada por estado */}
+            <i
+              className={`bi bi-arrow-down arrowProfile ${isProfileRotated ? Styles.rotated : ''}`}
+              id="arrowProfile"
+              aria-hidden="true"
+            ></i>
+
+          </div> {/* Fim Box Profile */}
+
+          {/* Box Menu */}
           <div className={Styles.box_menu}>
-            <a href="/">Home</a>
-            <a href="/">Documentários</a>
-            <a href="/">Destaques</a>
-            <a href="/">Filmes</a>
-            <a href="/">Feedback</a>
-          </div>
+            <a href="#">Home</a>
+            <a href="#Sonoplastia">Sonoplastia</a>
+            <a href="#VideoClipe">Videoclipe</a>
+            <a href="#Teaser">Teaser</a>
+            <a href="#Cortes">Cortes</a>
+            <a href="#">Webséries</a>
+           <a href="#" onClick={(e) => {
+              e.preventDefault();
+              onFeedbackClick();
+            }}>Feedback</a>
+          </div> {/* Fim Box Menu */}
 
+          {/* Box Pesquisa e Logo */}
           <div className={Styles.box_PesquisaLogo}>
-            {/* 
-              Adicionamos a classe 'ativar' dinamicamente se isSearchActive for true 
-            */}
-            <div
-              className={`${Styles.box_Pesquisa} ${isSearchActive ? Styles.ativar : ''}`}
-              id="boxBuscar"
-            >
-              <div
-                className={Styles.lupa_buscar}
-                id="lupaBuscar"
-                onClick={handleSearchClick}
-              >
+
+            {/* Box Pesquisa */}
+            <div className={`${Styles.box_Pesquisa} ${isSearchActive ? Styles.ativar : ''}`} id="boxBuscar">
+
+              {/* lupa_buscar: ícone que representa a busca */}
+              <div className={Styles.lupa_buscar} id="lupaBuscar" onClick={handleSearchClick}>
                 <i className="bi bi-search"></i>
               </div>
 
+              {/* input_buscar: campo de texto para digitar a busca */}
               <div className={Styles.input_buscar}>
                 <input type="text" placeholder="Buscar" />
               </div>
 
-              <div
-                className={Styles.btn_fechar}
-                id="btnFechar"
-                onClick={handleCloseClick}
-              >
+              {/* btn_fechar: botão que fecha a caixa de busca */}
+              <div className={Styles.btn_fechar} id="btnFechar" onClick={handleCloseClick}>
                 <i className="bi bi-x-circle"></i>
               </div>
-            </div>
 
+            </div> {/* Fim Box Pesquisa */}
+
+            {/* Logo: espaço para o logotipo do projeto */}
             <div className={Styles.Logo}></div>
-          </div>
+
+          </div> {/* Fim Box Pesquisa e Logo */}
 
         </div>
       </header>
