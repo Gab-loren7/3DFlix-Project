@@ -4,9 +4,12 @@ import FeedBack from '../../Components/Modal-FeedBack/FeedBack';
 import Styles from './Home.module.css'
 
 import BannerSite from '../../Components/IMG/VSFD/CameraAquelesEditadoMaior.png'
+import BaseVideos from '../../Components/BaseVideos/BaseVideos';
 
 import espacadorImgSonoplastia from '../../Components/IMG/EspacadorCBG/Espacador-PretVer-SentidoBaixo.png';
 import espacadorImgTeaser from '../../Components/IMG/EspacadorCBG/Espacador-VerPret-SentidoCima.png';
+
+import ImgSonoplastia from '../../Components/IMG/Sonoplastia/CapaCafezinSagrado.png'
 
 function Home() {
   const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
@@ -76,7 +79,7 @@ function Home() {
 
             <div className='espacador' />
 
-            {/* Div com vídeos */}
+            <BaseVideos Img={ImgSonoplastia} Nome={'Cafezinho da Tarde Sagrado'} />
           </div>
           <div className='espacador' />
 

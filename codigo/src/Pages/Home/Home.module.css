@@ -9,6 +9,7 @@ main {
 .titulo h2 {
     font-family: "Alex Brush", cursive;
     font-size: 84px;
+    font-weight: 300;
     color: #1f1f1f;
 } .titulo hr {
     border: 2px solid #1f1f1f;
@@ -60,7 +61,7 @@ main {
     z-index: 12;
     height: 50px;
     width: 50px;
-    top: 50px;
+    top: 80px;
     left: 190px;
     
     color: rgba(212, 212, 212, 0.848);
