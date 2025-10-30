@@ -70,7 +70,7 @@ header {
 
     gap: 50px;
     font-family: "Overlock", sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -126,6 +126,7 @@ header {
     width: 240px;
     background-color: #f1f1f1;
     color: #1f1f1f;
+    margin-left: 40px;
 }
 
 /* Area ao redor do icone lupa */

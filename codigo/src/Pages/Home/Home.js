@@ -31,7 +31,7 @@ function Home() {
   };
 
   const Sonoplastia = {
-    scrollMarginTop: '80px'
+    scrollMarginTop: '20px'
   };
 
   return (

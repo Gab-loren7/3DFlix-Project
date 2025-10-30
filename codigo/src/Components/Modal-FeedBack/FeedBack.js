@@ -3,10 +3,6 @@ import Styles from './FeedBack.module.css';
 
 function FeedBack({ isOpen, onClose }) {
 
-    // const espacadorVertical = {
-    //     height: 
-    // }
-
     // Effect para controlar o scroll do body
     useEffect(() => {
         if (isOpen) {
