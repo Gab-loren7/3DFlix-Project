@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Styles from './Navbar.module.css';
 
-function Navbar({ onFeedbackClick }) {
+const Navbar = ({ onFeedbackClick }) => {
 
   // Estado que controla se a busca está ativa (mostra/oculta a caixa de busca)
   const [isSearchActive, setIsSearchActive] = useState(false);
@@ -72,7 +72,14 @@ function Navbar({ onFeedbackClick }) {
 
               {/* input_buscar: campo de texto para digitar a busca */}
               <div className={Styles.input_buscar}>
-                <input type="text" placeholder="Buscar" />
+                  <select>
+                    <option value="" disabled selected>Buscar...</option>
+                    <option value="1"><a>Sonoplastia</a></option>
+                    <option value="2">Videoclipe</option>
+                    <option value="3">Teaser</option>
+                    <option value="4">Cortes</option>
+                    <option value="5">Webséries</option>
+                  </select>
               </div>
 
               {/* btn_fechar: botão que fecha a caixa de busca */}

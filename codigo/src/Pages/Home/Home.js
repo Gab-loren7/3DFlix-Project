@@ -1,15 +1,27 @@
 import React, { useState } from 'react';
+import Styles from './Home.module.css';
+
+// Componentes
 import Navbar from '../../Components/Navbar/Navbar';
 import FeedBack from '../../Components/Modal-FeedBack/FeedBack';
-import Styles from './Home.module.css'
-
-import BannerSite from '../../Components/IMG/VSFD/CameraAquelesEditadoMaior.png'
+import BannerSite from '../../Components/IMG/VSFD/CameraAquelesEditadoMaior.png';
 import BaseVideos from '../../Components/BaseVideos/BaseVideos';
 
-import espacadorImgSonoplastia from '../../Components/IMG/EspacadorCBG/Espacador-PretVer-SentidoBaixo.png';
+// Espaçador Personalizado
+import espacadorPretVermBaixo from '../../Components/IMG/EspacadorCBG/Espacador-PretVer-SentidoBaixo.png';
 import espacadorImgTeaser from '../../Components/IMG/EspacadorCBG/Espacador-VerPret-SentidoCima.png';
 
-import ImgSonoplastia from '../../Components/IMG/Sonoplastia/CapaCafezinSagrado.png'
+// Video Sonoplastia
+import ImgSonoplastiaCafezin from '../../Components/IMG/Sonoplastia/CapaCafezinSagrado.png';
+import ImgSonoplastiaDexpaw from '../../Components/IMG/Sonoplastia/Dexpaw.png';
+import ImgSonoplastiaAtencao from '../../Components/IMG/Sonoplastia/prendendoAtenção.png';
+import ImgSonoplastiaNoFoco from '../../Components/IMG/Sonoplastia/noFoco.png';
+import ImgSonoplastiaVisitaDespercebida from '../../Components/IMG/Sonoplastia/VisitaDespercebida.png';
+import ImgSonoplastiaDesigual from '../../Components/IMG/Sonoplastia/Desigual.png';
+import ImgSonoplastiClapClap from '../../Components/IMG/Sonoplastia/ClapClap.png';
+import ImgSonoplastiaUmDiaNoTrabalho from '../../Components/IMG/Sonoplastia/UmDiaNoTrabalho.png';
+import ImgSonoplastiaoSomDoEncontro from '../../Components/IMG/Sonoplastia/oSomDoEncontro.png';
+import ImgSonoplastiaoPoluicaoSonora from '../../Components/IMG/Sonoplastia/poluicaoSonora.png';
 
 function Home() {
   const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
@@ -23,11 +35,18 @@ function Home() {
     backgroundColor: '#A10E15',
     boxShadow: '0px 5px 15px rgba(0, 0, 0, 0.5)',
     height: '80px',
-    backgroundImage: `url(${espacadorImgSonoplastia})`
+    backgroundImage: `url(${espacadorPretVermBaixo})`
   }; const styleEspacadorTeaser = {
     backgroundColor: '#A10E15',
     height: '80px',
     backgroundImage: `url(${espacadorImgTeaser})`
+  }; const styleEspacadorCortes = {
+    backgroundColor: '#A10E15',
+    boxShadow: '0px 5px 15px rgba(0, 0, 0, 0.5)',
+    height: '80px',
+    backgroundImage: `url(${espacadorPretVermBaixo})`,
+    border: 'none',
+    boxShadow: 'none'
   };
 
   const Sonoplastia = {
@@ -78,8 +97,33 @@ function Home() {
             </div>
 
             <div className='espacador' />
+            <div className={Styles.carousel}>
+              <div className={Styles.group} aria-hidden>
+                <BaseVideos Img={ImgSonoplastiaCafezin} Nome={'Cafezinho da Tarde Sagrado'} />
+                <BaseVideos Img={ImgSonoplastiaDexpaw} Nome={'Dexpaw'} />
+                <BaseVideos Img={ImgSonoplastiaAtencao} Nome={'Prendendo a Atenção'} />
+                <BaseVideos Img={ImgSonoplastiaNoFoco} Nome={'No Foco'} />
+                <BaseVideos Img={ImgSonoplastiaVisitaDespercebida} Nome={'Visita Despercebida'} />
+                <BaseVideos Img={ImgSonoplastiaDesigual} Nome={'Desigual'} />
+                <BaseVideos Img={ImgSonoplastiClapClap} Nome={'Clap Clap'} />
+                <BaseVideos Img={ImgSonoplastiaUmDiaNoTrabalho} Nome={'Um dia no trabalho'} />
+                <BaseVideos Img={ImgSonoplastiaoSomDoEncontro} Nome={'O som do encontro'} />
+                <BaseVideos Img={ImgSonoplastiaoPoluicaoSonora} Nome={'Poluição Sonora'} />
+              </div>
+              <div className={Styles.group} aria-hidden>
+                <BaseVideos Img={ImgSonoplastiaCafezin} Nome={'Cafezinho da Tarde Sagrado'} />
+                <BaseVideos Img={ImgSonoplastiaDexpaw} Nome={'Dexpaw'} />
+                <BaseVideos Img={ImgSonoplastiaAtencao} Nome={'Prendendo a Atenção'} />
+                <BaseVideos Img={ImgSonoplastiaNoFoco} Nome={'No Foco'} />
+                <BaseVideos Img={ImgSonoplastiaVisitaDespercebida} Nome={'Visita Despercebida'} />
+                <BaseVideos Img={ImgSonoplastiaDesigual} Nome={'Desigual'} />
+                <BaseVideos Img={ImgSonoplastiClapClap} Nome={'Clap Clap'} />
+                <BaseVideos Img={ImgSonoplastiaUmDiaNoTrabalho} Nome={'Um dia no trabalho'} />
+                <BaseVideos Img={ImgSonoplastiaoSomDoEncontro} Nome={'O som do encontro'} />
+                <BaseVideos Img={ImgSonoplastiaoPoluicaoSonora} Nome={'Poluição Sonora'} />
 
-            <BaseVideos Img={ImgSonoplastia} Nome={'Cafezinho da Tarde Sagrado'} />
+              </div>
+            </div>
           </div>
           <div className='espacador' />
 
@@ -139,6 +183,8 @@ function Home() {
           <div className='espacador' />
 
         </section> {/* Fim Section Cortes */}
+
+        <div className='espacador' style={ styleEspacadorCortes} />
       </main>
     </div>
   );

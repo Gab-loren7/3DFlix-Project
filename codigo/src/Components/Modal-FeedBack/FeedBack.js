@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Styles from './FeedBack.module.css';
 
-function FeedBack({ isOpen, onClose }) {
+const FeedBack = ({ isOpen, onClose }) => {
 
     // Effect para controlar o scroll do body
     useEffect(() => {

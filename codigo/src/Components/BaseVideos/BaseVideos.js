@@ -1,7 +1,7 @@
 import React from 'react'
 import Styles from './BaseVideos.module.css'
 
-function BaseVideos({Img,Nome}) {
+const BaseVideos = ({Img,Nome}) => {
     const espacadorHeight = {
         height: '30px',
         marginTop: '-5px',

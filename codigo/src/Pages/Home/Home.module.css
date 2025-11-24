@@ -1,3 +1,4 @@
+
 main {
     /* border: 2px solid red; */
     z-index: 1;
@@ -22,7 +23,8 @@ main {
     position: relative;
     z-index: 10;
     width: 100%;
-    height: 550px;
+    min-height: 60vh;
+    height: 65vh;
     background-color: #000;
     /* border: 3px solid yellowgreen; */
 
@@ -93,7 +95,38 @@ main {
    background-color: #f1f1f1; 
    width: 100vw;
    height: auto;
-} /* Fim Config Section Sonoplastia */
+} 
+
+.carousel{
+    /* border: 3px solid greenyellow; */
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    overflow-x: auto;
+} .carousel::-webkit-scrollbar {
+    display: none;
+}.carousel:hover .group {
+    animation-play-state: paused; /* Pausa a animação ao passar o mouse */
+}
+
+.group {
+    width: auto;
+    display: flex;
+    flex: 0 0 15em;
+    gap: 50px; /* Aumente o espaçamento entre os vídeos */
+    padding: 10px; /* Adicione um espaçamento interno, se necessário */
+    animation: spin 30s infinite linear;
+} 
+.group > div {
+    margin: 0 15px; /* Adicione margens laterais aos itens */
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+    from {translate: 0;}
+}
+/* Fim Config Section Sonoplastia */
 
 /* Config Section VideoClipe */
 .VideoClipe {

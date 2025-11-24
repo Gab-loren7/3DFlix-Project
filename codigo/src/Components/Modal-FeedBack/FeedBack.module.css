@@ -34,8 +34,8 @@
     margin: auto;
     z-index: 1001;
     background-color: #f1f1f1;
-    width: 60vw;
-    min-width: 400px;
+    min-width: 600px;
+    width: 60%;
     height: auto;
     border: 10px solid #A10E15;
     border-radius: 50px;
@@ -65,7 +65,8 @@
 } .Qr_code {
     border: #A10E15 solid 5px;
     border-radius: 20px;
-    width: 350px;
+    min-width: 350px;
+    width: 400px;
     height: 45vh;
     background-image: url(../IMG/QRcode-3D.png);
     background-position: center;

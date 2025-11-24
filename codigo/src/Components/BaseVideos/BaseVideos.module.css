@@ -10,7 +10,7 @@
     transition: ease-in-out .5s ;
 }.Box_BaseVideos:hover {
     scale: calc(1.03);
-    height: 300px;
+    height: 320px;
 }
 
 /* Capa do Video */
@@ -39,14 +39,11 @@
 .NomeDoVideo {
     z-index: 3;
     position: absolute;
-    top: 10px;
+    top: 210px;
     left: 20px;
     font-family: "Overlock", sans-serif;
     font-size: 24px;
     transition: ease-in-out .5s;
-}.Box_BaseVideos:hover .NomeDoVideo {
-    position: absolute;
-    top: 210px;
 }
 
 /* Botão Saiba Mais */
