@@ -115,8 +115,11 @@ main {
     flex: 0 0 15em;
     gap: 50px; /* Aumente o espaçamento entre os vídeos */
     padding: 10px; /* Adicione um espaçamento interno, se necessário */
-    animation: spin 30s infinite linear;
-} 
+    animation: spin 60s infinite linear;
+} .animationDuration {
+    animation: spin 40s infinite linear;
+    
+}
 .group > div {
     margin: 0 15px; /* Adicione margens laterais aos itens */
 }
@@ -130,6 +133,7 @@ main {
 
 /* Config Section VideoClipe */
 .VideoClipe {
+    scroll-margin-top: 200px;
     background-color: #f1f1f1; 
     width: 100vw;
     height: auto;

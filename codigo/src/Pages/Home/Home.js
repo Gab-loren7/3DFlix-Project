@@ -22,8 +22,18 @@ import ImgSonoplastiClapClap from '../../Components/IMG/Sonoplastia/ClapClap.png
 import ImgSonoplastiaUmDiaNoTrabalho from '../../Components/IMG/Sonoplastia/UmDiaNoTrabalho.png';
 import ImgSonoplastiaoSomDoEncontro from '../../Components/IMG/Sonoplastia/oSomDoEncontro.png';
 import ImgSonoplastiaoPoluicaoSonora from '../../Components/IMG/Sonoplastia/poluicaoSonora.png';
+// FIm Video Sonoplastia
 
-function Home() {
+// Videos Videoclipe
+import ImgVideoClipeLesBitels from '../../Components/IMG/Videoclipe/LesBitels.png';
+import ImgVideoClipeSonheiQueTavaCasando from '../../Components/IMG/Videoclipe/SonheiQueTavaCasando.png';
+import ImgVideoClipeDeusMeProteja from '../../Components/IMG/Videoclipe/DeusMeProteja.png';
+import ImgVideoClipeEspresso from '../../Components/IMG/Videoclipe/Espresso.png';
+import ImgVideoPrettyIsntPretty from '../../Components/IMG/Videoclipe/PrettyIsntPretty.png';
+import ImgVideoClipe7Years from '../../Components/IMG/Videoclipe/7Years.png';
+// Fim Videos Videoclipe
+
+const Home = () => {
   const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
 
   const handleOpenFeedback = () => setIsFeedbackOpen(true);
@@ -51,6 +61,11 @@ function Home() {
 
   const Sonoplastia = {
     scrollMarginTop: '20px'
+  }; const textoVideoBranco = {
+    color: '#f1f1f1',
+    animationDuration: '40s'
+  }; const video40s = {
+    animationDuration: '40s'
   };
 
   return (
@@ -136,6 +151,29 @@ function Home() {
             <div className={Styles.titulo}>
               <h2>Videoclipe</h2>
               <hr />
+
+              <div className='espacador'></div>
+
+              <div className={Styles.carousel}>
+                <div className={Styles.group} style={video40s} aria-hidden>
+                  <BaseVideos Img={ImgVideoClipeLesBitels} Nome={'LesBitels'} />
+                  <BaseVideos Img={ImgVideoClipeSonheiQueTavaCasando} Nome={'Sonhei que Tava me Casando'} />
+                  <BaseVideos Img={ImgVideoClipeDeusMeProteja} Nome={'Deus me Proteja'} />
+                  <BaseVideos Img={ImgVideoClipeEspresso} Nome={'Espresso'} />
+                  <BaseVideos Img={ImgVideoPrettyIsntPretty} Nome={'Pretty isn’t Pretty'} />
+                  <BaseVideos Img={ImgVideoClipe7Years} Nome={'7 Years'} />
+
+                </div>
+                <div className={Styles.group} style={video40s} aria-hidden>
+                  <BaseVideos Img={ImgVideoClipeLesBitels} Nome={'LesBitels'} />
+                  <BaseVideos Img={ImgVideoClipeSonheiQueTavaCasando} Nome={'Sonhei que Tava me Casando'} />
+                  <BaseVideos Img={ImgVideoClipeDeusMeProteja} Nome={'Deus me Proteja'} />
+                  <BaseVideos Img={ImgVideoClipeEspresso} Nome={'Espresso'} />
+                  <BaseVideos Img={ImgVideoPrettyIsntPretty} Nome={'Pretty isn’t Pretty'} />
+                  <BaseVideos Img={ImgVideoClipe7Years} Nome={'7 Years'} />
+                </div>
+              </div>
+
             </div>
 
             <div className='espacador' />
@@ -155,6 +193,26 @@ function Home() {
             <div className={Styles.titulo}>
               <h2>Teaser</h2>
               <hr />
+            <div className='espacador' />
+
+              <div className={Styles.carousel} style={textoVideoBranco}>
+                <div className={Styles.group} aria-hidden>
+                  <BaseVideos Img={ImgVideoClipeLesBitels} Nome={'LesBitels'} />
+                  <BaseVideos Img={ImgVideoClipeSonheiQueTavaCasando} Nome={'Sonhei que Tava me Casando'} />
+                  <BaseVideos Img={ImgVideoClipeDeusMeProteja} Nome={'Deus me Proteja'} />
+                  <BaseVideos Img={ImgVideoClipeEspresso} Nome={'Espresso'} />
+                  <BaseVideos Img={ImgVideoPrettyIsntPretty} Nome={'Pretty isn’t Pretty'} />
+                  <BaseVideos Img={ImgVideoClipe7Years} Nome={'7 Years'} />
+                </div>
+                <div className={Styles.group} style={textoVideoBranco} aria-hidden>
+                  <BaseVideos Img={ImgVideoClipeLesBitels} Nome={'LesBitels'} />
+                  <BaseVideos Img={ImgVideoClipeSonheiQueTavaCasando} Nome={'Sonhei que Tava me Casando'} />
+                  <BaseVideos Img={ImgVideoClipeDeusMeProteja} Nome={'Deus me Proteja'} />
+                  <BaseVideos Img={ImgVideoClipeEspresso} Nome={'Espresso'} />
+                  <BaseVideos Img={ImgVideoPrettyIsntPretty} Nome={'Pretty isn’t Pretty'} />
+                  <BaseVideos Img={ImgVideoClipe7Years} Nome={'7 Years'} />
+                </div>
+              </div>
             </div>
 
             <div className='espacador' />
@@ -184,7 +242,7 @@ function Home() {
 
         </section> {/* Fim Section Cortes */}
 
-        <div className='espacador' style={ styleEspacadorCortes} />
+        <div className='espacador' style={styleEspacadorCortes} />
       </main>
     </div>
   );
