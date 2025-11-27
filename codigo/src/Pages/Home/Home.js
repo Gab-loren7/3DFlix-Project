@@ -185,47 +185,10 @@ const Home = () => {
 
         </section> {/* Fim Section Videoclipe */}
 
-        {/* Section Teaser */}
-        <section className={Styles.Teaser} id='Teaser'>
-          <div className='espacador' style={styleEspacadorTeaser} />
-          <div className='margin'>
-            <div className='espacador' />
-            <div className={Styles.titulo}>
-              <h2>Teaser</h2>
-              <hr />
-            <div className='espacador' />
-
-              <div className={Styles.carousel} style={textoVideoBranco}>
-                <div className={Styles.group} aria-hidden>
-                  <BaseVideos Img={ImgVideoClipeLesBitels} Nome={'LesBitels'} />
-                  <BaseVideos Img={ImgVideoClipeSonheiQueTavaCasando} Nome={'Sonhei que Tava me Casando'} />
-                  <BaseVideos Img={ImgVideoClipeDeusMeProteja} Nome={'Deus me Proteja'} />
-                  <BaseVideos Img={ImgVideoClipeEspresso} Nome={'Espresso'} />
-                  <BaseVideos Img={ImgVideoPrettyIsntPretty} Nome={'Pretty isn’t Pretty'} />
-                  <BaseVideos Img={ImgVideoClipe7Years} Nome={'7 Years'} />
-                </div>
-                <div className={Styles.group} style={textoVideoBranco} aria-hidden>
-                  <BaseVideos Img={ImgVideoClipeLesBitels} Nome={'LesBitels'} />
-                  <BaseVideos Img={ImgVideoClipeSonheiQueTavaCasando} Nome={'Sonhei que Tava me Casando'} />
-                  <BaseVideos Img={ImgVideoClipeDeusMeProteja} Nome={'Deus me Proteja'} />
-                  <BaseVideos Img={ImgVideoClipeEspresso} Nome={'Espresso'} />
-                  <BaseVideos Img={ImgVideoPrettyIsntPretty} Nome={'Pretty isn’t Pretty'} />
-                  <BaseVideos Img={ImgVideoClipe7Years} Nome={'7 Years'} />
-                </div>
-              </div>
-            </div>
-
-            <div className='espacador' />
-
-            {/* Div com vídeos */}
-
-          </div>
-          <div className='espacador' />
-        </section> {/* Fim Section Teaser */}
-
-
         {/* Section Cortes */}
         <section className={Styles.Cortes} id='Cortes'>
+          <div className='espacador' style={styleEspacadorTeaser} />
+          <div className='espacador' />
 
           <div className='margin'>
             <div className={Styles.titulo}>
@@ -242,7 +205,25 @@ const Home = () => {
 
         </section> {/* Fim Section Cortes */}
 
-        <div className='espacador' style={styleEspacadorCortes} />
+        {/* Section Webséries */}
+        <section className={Styles.Webseries} id='Webseries'>
+
+          <div className='margin'>
+            <div className={Styles.titulo}>
+              <h2>Webséries</h2>
+              <hr />
+            </div>
+
+            <div className='espacador' />
+
+            {/* Div com vídeos */}
+          </div>
+
+          <div className='espacador' />
+
+          <div className='espacador' style={styleEspacadorCortes} />
+        </section> {/* Fim Section Webséries */}
+
       </main>
     </div>
   );

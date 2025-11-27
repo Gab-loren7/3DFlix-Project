@@ -50,9 +50,8 @@ const Navbar = ({ onFeedbackClick }) => {
             <a href="#">Home</a>
             <a href="#Sonoplastia">Sonoplastia</a>
             <a href="#VideoClipe">Videoclipe</a>
-            <a href="#Teaser">Teaser</a>
             <a href="#Cortes">Cortes</a>
-            <a href="#">Webséries</a>
+            <a href="#Webseries">Webséries</a>
            <a href="#" onClick={(e) => {
               e.preventDefault();
               onFeedbackClick();
