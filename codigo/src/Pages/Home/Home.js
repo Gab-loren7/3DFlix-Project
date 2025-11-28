@@ -52,7 +52,6 @@ const Home = () => {
     backgroundImage: `url(${espacadorImgTeaser})`
   }; const styleEspacadorCortes = {
     backgroundColor: '#A10E15',
-    boxShadow: '0px 5px 15px rgba(0, 0, 0, 0.5)',
     height: '80px',
     backgroundImage: `url(${espacadorPretVermBaixo})`,
     border: 'none',
@@ -61,9 +60,6 @@ const Home = () => {
 
   const Sonoplastia = {
     scrollMarginTop: '20px'
-  }; const textoVideoBranco = {
-    color: '#f1f1f1',
-    animationDuration: '40s'
   }; const video40s = {
     animationDuration: '40s'
   };
@@ -219,7 +215,6 @@ const Home = () => {
             {/* Div com vídeos */}
           </div>
 
-          <div className='espacador' />
 
           <div className='espacador' style={styleEspacadorCortes} />
         </section> {/* Fim Section Webséries */}

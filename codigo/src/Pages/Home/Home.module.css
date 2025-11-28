@@ -107,6 +107,17 @@ main {
     display: none;
 }.carousel:hover .group {
     animation-play-state: paused; /* Pausa a animação ao passar o mouse */
+} .carousel::scrollbar-button(right) {
+    content: '→';
+    border: none;
+    background-color: #A10E15;
+    font-size: 3em;
+    color: #f1f1f1;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding-bottom: .1em;
+    cursor: pointer;
 }
 
 .group {
