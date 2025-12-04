@@ -59,6 +59,8 @@ Sempre quis ter um espaço onde pude mostrar e organizar tudo aquilo que eu e mi
 
 - Depois, basta acessar http://localhost:3000
 
+- Ou clicando no icone do Netlify
+
 
 ❤️ Contribuições
 
