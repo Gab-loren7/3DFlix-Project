@@ -1,7 +1,7 @@
 import React from 'react'
 import Styles from './BaseVideos.module.css'
 
-const BaseVideos = ({ Img, Nome }) => {
+const BaseVideos = ({ Img, Nome, onClick }) => {
   const espacadorHeight = {
     height: '30px',
     marginTop: '-5px',
@@ -10,7 +10,7 @@ const BaseVideos = ({ Img, Nome }) => {
 
   return (
     <div>
-      <div className={Styles.Box_BaseVideos}>
+      <div className={Styles.Box_BaseVideos} onClick={onClick}>
         <img src={Img} alt='Capa do Vídeo' className={Styles.CapaVideo} />
 
         <i class="bi bi-play-circle" id={Styles.btn_playCapa}></i>

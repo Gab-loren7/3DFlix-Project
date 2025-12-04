@@ -42,7 +42,7 @@ main {
 
 .btn_left_sono, .btn_right_sono {
     position: absolute;
-    top: 103vh;
+    top: 108vh;
     z-index: 15;
     background-color: #A10E15;
     color: #f1f1f1;
@@ -69,7 +69,7 @@ main {
 }
 .btn_left_video, .btn_right_video {
     position: absolute;
-    top: 158vh;
+    top: 166vh;
     z-index: 15;
     background-color: #A10E15;
     color: #f1f1f1;
@@ -98,10 +98,10 @@ main {
     border: 2px solid #f1f1f1;
 }/* Fim Config Section Teaser e Webséries*/
 
-
+/* Botões Cortes */
 .btn_left_cortes, .btn_right_cortes {
     position: absolute;
-    top: 230vh;
+    top: 240vh;
     z-index: 15;
     background-color: #A10E15;
     color: #f1f1f1;
@@ -115,5 +115,25 @@ main {
 .btn_left_cortes {
     left: 5%;
 } .btn_right_cortes {
+    left: 93% ;
+}
+
+/* Botões Web */
+.btn_left_web, .btn_right_web {
+    position: absolute;
+    top: 300vh;
+    z-index: 15;
+    background-color: #A10E15;
+    color: #f1f1f1;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.btn_left_web {
+    left: 5%;
+} .btn_right_web {
     left: 93% ;
 }

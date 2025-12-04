@@ -62,6 +62,7 @@
     align-content: center;
     justify-content: center;
     gap: 30px;
+    color: #1f1f1f !important;
 } .Qr_code {
     border: #A10E15 solid 5px;
     border-radius: 20px;
@@ -132,5 +133,4 @@
     }
 }
 /* Fim Animação Modal Sugestões */
-
 

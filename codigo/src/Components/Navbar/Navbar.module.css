@@ -54,6 +54,17 @@ header {
     background-repeat: no-repeat;
 }
 
+.IMGprofile img{
+    /* border: 3px solid red; */
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .rotated {
     transform: rotate(180deg);
     transition: transform 0.25s ease;
