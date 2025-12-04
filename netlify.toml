@@ -1,0 +1,4 @@
+[build]
+  base = "codigo"
+  publish = "codigo/build"
+  command = "npm install && npm run build"
