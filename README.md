@@ -9,6 +9,13 @@
 
  <br>
 
+ <div align="center">
+   
+ [![Netlify Status](https://api.netlify.com/api/v1/badges/d9ae821c-689b-4eaf-8a6d-28fc4ab66ea9/deploy-status)](https://app.netlify.com/projects/3dflix/deploys)
+ </div>
+
+ <br>
+
 <img width="1915" height="908" alt="image" src="https://github.com/user-attachments/assets/9fa5de34-8719-45d8-a91f-b6ee88bb7814" />
 
 <br>
