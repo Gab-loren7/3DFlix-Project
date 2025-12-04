@@ -71,12 +71,12 @@ const Navbar = ({ onFeedbackClick }) => {
 
           {/* Box Menu */}
           <div className={Styles.box_menu}>
-            <a href="#">Home</a>
+            <a href="#Home">Home</a>
             <a href="#Sonoplastia">Sonoplastia</a>
             <a href="#VideoClipe">Videoclipe</a>
             <a href="#Cortes">Cortes</a>
             <a href="#Webseries">Webséries</a>
-            <a href="#" onClick={(e) => {
+            <a href="#Home" onClick={(e) => {
               e.preventDefault();
               onFeedbackClick();
             }}>Feedback</a>

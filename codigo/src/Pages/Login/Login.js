@@ -47,17 +47,6 @@ function Login() {
     return () => botao.removeEventListener("click", handleLogin);
   }, []);
 
-  const stylebody = {
-    backgroundImage: '../../Components/IMG/Backgrounds/Background_Login_Cadastro.jpg',
-    backgroundSize: 'cover',
-    height: '100vh',
-    overflow: 'hidden',
-    textalin: 'center',
-    justifyContent: 'center',
-    alignContent: 'center',
-    alignItems: 'center',
-    margin: 'auto'
-  };
   return (
     <div className={Styles.body}>
       <section className={Styles.areaCadastro}>

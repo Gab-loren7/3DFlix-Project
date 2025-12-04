@@ -76,6 +76,7 @@ const Home = () => {
   };
 
   const styleBanner3D = {
+    scrollMarginTop: '100px',
     backgroundImage: `url(${Banner3D})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
@@ -183,7 +184,7 @@ const Home = () => {
       <main>
 
         {/* Banner aqui */}
-        <div className={Styles.Banner3D} style={styleBanner3D} />
+        <div id='Home' style={styleBanner3D} />
 
         {/* ------------------- SONOPLASTIA ------------------- */}
         <section className={Styles.Sonoplastia} id="Sonoplastia" style={Sonoplastia}>
