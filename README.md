@@ -11,7 +11,7 @@
 
  <div align="center">
    
- [![Netlify Status](https://api.netlify.com/api/v1/badges/d9ae821c-689b-4eaf-8a6d-28fc4ab66ea9/deploy-status)](https://app.netlify.com/projects/3dflix/deploys)
+ [![Netlify Status](https://api.netlify.com/api/v1/badges/d9ae821c-689b-4eaf-8a6d-28fc4ab66ea9/deploy-status)](https://3dflix.netlify.app/)
  </div>
 
  <br>
